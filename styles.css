@@ -1,0 +1,177 @@
+#webBody{
+    margin: 40px;
+}
+
+#headerWrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+#logo{
+    width: 100px;
+}
+
+.navBtn{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:slategrey;
+    cursor: pointer;
+}
+
+.active{
+    color: #01b4e4;
+    text-decoration: underline 5px;
+    text-underline-offset: 4px;
+}
+
+#dropdown{
+    width:100px; 
+}
+
+#pageBarWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pages{
+    position: relative;
+}
+
+#pageBar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 1rem;
+    align-items: center;
+}
+
+.pageBtn{
+    height: 30px;
+	color: white;
+	border-style: none;
+    background-color: #01b4e4;
+	padding: 5px 10px;
+    border-radius: 5px;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#movieCardsWrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+.movieCard{
+    width: 100%;
+    text-align: center;
+    border: 1;
+    box-shadow: 2px 2px #888888;
+}
+
+.cardPoster{
+    width: 100%;
+}
+
+.cardTitle{
+    align-self: center;
+    border: 0;
+    background-color: transparent;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.cardTitle:hover{
+    color: #90cea1;
+}
+
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.ratingGroup{
+    display: flex;
+    align-items: center;
+}
+
+.ratingIcon{
+    color: #f5c518;
+}
+
+.ion-ios-heart{
+    color: red;
+}
+
+.detailModal{
+    background-color: #fefefe;
+    position: fixed;
+    display: flex;
+    width: 50%;
+    height: 400px;
+    padding: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.modalContainer{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.closeBtn{
+    position: absolute;
+    width: 2.5%;
+    right: 20px;
+    top: 20px;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.modalContent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    justify-content: space-between;
+}
+
+.modalMainTitle{
+    margin: 0px;
+}
+
+.modalSecondaryTitle{
+    margin: 0px;
+}
+
+.modalText{
+    margin: 0px;
+    max-height:180px;
+    overflow-y:scroll;
+}
+
+.genreIcon{
+    background-color: #90cea1;
+    display: inline-block;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.companyIcon{
+    display: inline-block;
+    height: 30px;
+    width: 40px;
+    margin: 2px;
+}

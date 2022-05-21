@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.min.css"
+        integrity="sha512-JApjWRnfonFeGBY7t4yq8SWr1A6xVYEJgO/UMIYONxaR3C9GETKUg0LharbJncEzJF5Nmiv+Pr5QNulr81LjGQ=="
+        crossorigin="anonymous"
+    />
+    <title>TMDB</title>
+</head>
+<body id="webBody">
+
+    <header id="headerWrapper" >
+
+        <image id="logo"
+        src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
+        ></image>
+
+        <h1 id="home" class="navBtn active">HOME</h1>
+
+        <h1 id="liked" class="navBtn">LIKED</h1>
+
+
+
+
+    </header>
+    
+    <main>
+
+        <select id="dropdown" name="categories">
+            <option value="popular" selected>Popular</option>
+            <option value="now_playing">Now playing</option>
+            <option value="top_rated">Top rated</option>
+            <option value="upcoming">Upcoming</option>
+        </select>
+
+        <div id="pageBarWrapper">
+
+            <div id="pageBar">
+                <button class="pageBtn prev">Prev</button>
+                <p id="pages"></p>
+                <button class="pageBtn next">Next</button>
+            </div>
+
+        </div>
+        
+
+        <div id="movieCardsWrapper">
+
+            <!-- <div class="movieCard">
+                <img class="cardPoster" src="https://image.tmdb.org/t/p/w500/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg"/>
+                <button class="cardTitle">title</button>
+                <div class="cardInfo">
+                    <div class="ratingGroup">
+                        <i class="ion-star ratingIcon"></i>
+                        <p>7</p>
+                    </div>
+                    <i class="likeBtn ion-ios-heart-outline"></i>
+                </div>
+            </div> -->
+
+        </div>
+
+        <!-- <div class="detailModal">
+            <img class="closeBtn" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-1024.png">
+            <img class="modalPoster" src="https://image.tmdb.org/t/p/w500/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg"/>
+            <div class="modalContent">
+                <h2 class="modalMainTitle">Title</h2>
+
+                <h4 class="modalSecondaryTitle">Overview</h4>
+                <p class="modalText">"After settling in Green Hills, Sonic is eager to prove he has what it takes to be a true hero. His test comes when Dr. Robotnik returns, this time with a new partner, Knuckles, in search for an emerald that has the power to destroy civilizations. Sonic teams up with his own sidekick, Tails, and together they embark on a globe-trotting journey to find the emerald before it falls into the wrong hands."</p>
+                
+                <h4 class="modalSecondaryTitle">Genre</h4>
+                <div class="genreContainer">
+
+                </div>
+
+                <h4 class="modalSecondaryTitle">Rating</h4>
+                <p class="modalText">7.3</p>
+
+                <h4 class="modalSecondaryTitle">Production Companies</h4>
+                <div class="productionCompaniesContainer">
+
+                </div>
+            </div>
+        </div> -->
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
